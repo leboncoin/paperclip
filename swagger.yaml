@@ -48,17 +48,19 @@ definitions:
     type: "object"
     required:
     - "id"
+    - "title"
     - "category_id"
     - "creation_date"
     - "description"
     - "images_url"
     - "is_urgent"
     - "price"
-    - "title"
     properties:
       id:
         type: "integer"
         format: "int64"
+      title:
+        type: "string"
       category_id:
         type: "integer"
         format: "int64"
@@ -74,6 +76,8 @@ definitions:
       price:
         type: "number"
         format: "float"
+      siret:
+        type: "string"
   ImagesURL:
     type: "object"
     properties:
